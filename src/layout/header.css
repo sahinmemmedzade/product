@@ -1,0 +1,261 @@
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+z-index: 1234578;
+width: 100%;
+  }
+  
+  nav > ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav > ul > li {
+    list-style-type: none;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: lightgray;
+  }
+  
+  nav ul li.active a {
+    position: relative;
+    color: black;
+  }
+  
+  nav ul li.active a:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .headericon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .i {
+    cursor: pointer;
+  }
+  
+  .product {
+    text-decoration: none;
+    color: black;
+    font-size: inherit;
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: black;
+    font-size: inherit;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    border: 3px solid black;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.open {
+    right: 0;
+    width: 30%;
+    z-index: 2122;
+  }
+  
+  .headericon.shifted {
+    margin-right: 240px;
+  }
+  
+  .cart-container {
+    position: relative;
+  }
+  
+  .cart-badge {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 12px;
+  }
+  .cart-item {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+.checkout{
+  background-color: black;
+  color: aliceblue;
+  margin-left: 40%;
+  border-radius: 10%;
+}
+.checkout a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.checkout:hover{
+  background-color: aliceblue;
+}
+.checkout:hover.checkout a{
+  color: black;}
+.cart-item img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px; /* Add some space between image and text */
+}
+
+.cart-item p {
+    width: 60%; /* Adjust width as needed */
+    margin: 0; /* Remove default margin */
+}
+
+  @media (min-width: 1001px) {
+    .hamburger-menu {
+      display: none;
+    }
+  
+    .headericon {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .navbar {
+      display: none;
+    }
+  
+    header {
+      height: 60px;
+    }
+  
+    .headericon {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .headericon.shifted {
+      margin-right: 0;
+    }
+  
+    .sidebar.open {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .sidebar.open nav > ul {
+      flex-direction: row; /* Change direction to row */
+      gap: 20px; /* Add gap between items */
+      justify-content: center; /* Center items horizontally */
+      padding: 20px; /* Add padding for better spacing */
+    }
+  
+    nav > ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  /* header.css */
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .sidebar ul li {
+    margin: 0;
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  .sidebar ul li.active a {
+    color: aqua; /* Color for active link */
+  }
+  .close-icon{
+    margin-left: 256px;
+font-size: 20px;}
+/* header.css */
+
+@media screen and (max-width: 620px) {
+    .headericon .i {
+      font-size: 20px !important;
+    }
+    .hamburger-menu{
+        font-size: 20px !important;
+
+    }
+    .headericon.shifted {
+        margin-right: 280px !important;
+      }
+  }
+  @media screen and (max-width: 500px) {
+    .headericon .i {
+      font-size: 20px !important;
+    }
+    .hamburger-menu{
+        font-size: 20px !important;
+
+    }
+    .headericon.shifted {
+        margin-right: 280px !important;
+      }
+      .product{
+        font-size: 15px;
+      }
+  }
+  @media screen and (max-width: 450px) {
+    .headericon .i {
+      font-size: 25px !important;
+    }
+    .hamburger-menu{
+        font-size: 25px !important;
+
+    }
+    .headericon.shifted {
+        margin-right: 250px !important;
+      }
+      .icart{
+        font-size: 15px !important;
+      }
+      .product{
+        font-size: 15px;
+      }
+  }
+  @media screen and (max-width: 420px) {
+    .sidebar.open {
+        right: 0;
+        width: 50% !important;
+      }
+  }
+  
+
+  

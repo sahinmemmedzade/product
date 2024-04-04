@@ -1,0 +1,76 @@
+.containerr {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 96px;
+}
+
+.containerr .imagee{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url("https://preview.colorlib.com/theme/product/images/hero_bg_1.jpg.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 70%;
+    height: 700px;
+}
+
+.aboutimagee{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 500px;
+    height: 250px;
+    left: 20px; 
+    bottom: 100px;
+    background-color: white;
+}
+.aboutimagee button{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 450;
+}
+.limitted{
+    font-size: 20px;
+}
+h3{
+    margin-top: 0px;
+}
+p{
+    margin-top: 0;
+}
+@media screen and (max-width: 850px) {
+    .aboutimagee{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .aboutimagee{
+        width: 280px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .aboutimagee{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .aboutimagee{
+        width: 190px;
+    }
+    .limitted{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .lorem{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,53 @@
+.product {
+    width: 27%;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.mainproduct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.crudspan {
+    color: black;
+}
+
+.product img {
+    transition: transform 0.3s ease;
+    width: 100%; 
+    height: inherit;
+}
+
+.product:hover img {
+    transform: scale(1.1); 
+}
+
+.productimg {
+    overflow: hidden;
+    display: flex;}
+
+.productimg img {
+    align-self: center; 
+    width: 100%; }
+    .newProduct {
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 2;
+    }
+    .newProduct.sale {
+        background-color: darkorange;
+        color: white;
+    }
+    @media (max-width: 1000px) {
+    .product{
+        width: 42%;
+    }
+    }
+    

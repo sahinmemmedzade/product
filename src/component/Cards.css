@@ -1,0 +1,47 @@
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgba(248, 249, 250, 0.973);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+
+.card1 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.card2 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.card3 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+    .card1icon,.card2icon,.card3icon{
+        font-size: 60px;
+    }   
